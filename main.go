@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"log"
+	"os"
 )
 
 func main() {
@@ -13,5 +14,6 @@ func main() {
 	fmt.Println("There are", outdated, "outdated deps")
 	if outdated > 0 {
 		fmt.Println(string(output))
+		os.Exit(1)
 	}
 }
