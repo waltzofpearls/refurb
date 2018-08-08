@@ -129,6 +129,8 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
+    "github.com/docker/docker/api/types",
+    "github.com/docker/docker/api/types/container",
     "github.com/docker/docker/client",
     "go.uber.org/zap",
   ]
